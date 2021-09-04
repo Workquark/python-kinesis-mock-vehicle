@@ -5,7 +5,7 @@ import time
 def schedule():
     scheduler = BackgroundScheduler()
     scheduler.configure()
-    scheduler.add_job(job, 'interval', seconds=0.5)
+    scheduler.add_job(job, 'interval', seconds=1)
     scheduler.start()
     # This is here to simulate application activity (which keeps the main thread alive).
     while True:
